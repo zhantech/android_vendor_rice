@@ -127,18 +127,13 @@ PRODUCT_PACKAGES += \
 
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
-    7z \
     bash \
     curl \
     getcap \
     htop \
-    lib7z \
     nano \
-    pigz \
     setcap \
-    unrar \
-    vim \
-    zip
+    vim
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/curl \
@@ -160,10 +155,6 @@ PRODUCT_COPY_FILES += \
     
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
-
-# rsync
-PRODUCT_PACKAGES += \
-    rsync
 
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
