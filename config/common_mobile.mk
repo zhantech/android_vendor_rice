@@ -10,8 +10,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     Backgrounds \
     Eleven \
-    Profiles \
-    Seedvault
+    Profiles
 
 ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
 PRODUCT_PACKAGES += \
@@ -20,16 +19,16 @@ endif
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
-    TrebuchetQuickStepGo
+    Launcher3QuickSteppGo
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    TrebuchetQuickStepGo
+    Launcher3QuickStepGo
 else
 PRODUCT_PACKAGES += \
-    TrebuchetQuickStep
+    Launcher3QuickStep
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    TrebuchetQuickStep
+    Launcher3QuickStep
 endif
 
 # Charger
